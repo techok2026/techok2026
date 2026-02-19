@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech OK | Ultimate Legal Resource Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --dark-blue: #0a1a2f;
+      --cyan: #00e5ff;
+      --light: #f4f7fb;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--dark-blue);
+      color: var(--light);
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: rgba(10, 26, 47, 0.95);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      color: var(--cyan);
+      font-size: 26px;
+      font-weight: 700;
+    }
+    nav a {
+      color: var(--light);
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: var(--cyan); }
+    .login-btn {
+      padding: 8px 18px;
+      border: 1px solid var(--cyan);
+      border-radius: 20px;
+      color: var(--cyan);
+    }
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 10%;
+      background: linear-gradient(135deg, rgba(0,229,255,0.15), rgba(10,26,47,1));
+      animation: fadeIn 1.5s ease;
+    }
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+      color: var(--cyan);
+    }
+    .hero p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+    }
+    section {
+      padding: 80px 8%;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .section-title h3 {
+      font-size: 32px;
+      color: var(--cyan);
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 30px;
+      border-radius: 16px;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0,229,255,0.25);
+    }
+    .card h4 {
+      color: var(--cyan);
+      margin-bottom: 10px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .gallery div {
+      height: 180px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #0f2a44, #133b5c);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      color: var(--cyan);
+    }
+    .contact {
+      background: rgba(255,255,255,0.04);
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #061425;
+      font-size: 14px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media(max-width: 768px) {
+      .hero h2 { font-size: 32px; }
+      nav a { margin-left: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tech OK</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="#login" class="login-btn">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h2>Your Ultimate Legal Resource Hub</h2>
+      <p>Tech OK delivers future-ready legal education, professional drafting, AI-powered solutions and competitive exam preparation through a premium digital experience.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-title"><h3>About Tech OK</h3></div>
+    <p style="max-width:900px;margin:auto;text-align:center">Located in Sector 48, Sonipat, Harval, India, Tech OK is a modern legal resource centre combining law, technology and innovation. We empower law students, judiciary aspirants and professionals with structured knowledge, authentic materials and intelligent legal tools.</p>
+  </section>
+
+  <section id="services">
+    <div class="section-title"><h3>Our Services</h3></div>
+    <div class="services">
+      <div class="card"><h4>Legal Drafts</h4><p>Professional drafting services with precision, clarity and legal accuracy.</p></div>
+      <div class="card"><h4>Judiciary Notes</h4><p>Exam-oriented notes curated by experts for judicial services.</p></div>
+      <div class="card"><h4>AI-Based Solutions</h4><p>Smart legal research and automation powered by AI.</p></div>
+      <div class="card"><h4>CLAT UG & PG</h4><p>Comprehensive preparation materials and mentorship.</p></div>
+      <div class="card"><h4>UGC NET</h4><p>Focused legal studies content aligned with latest syllabus.</p></div>
+      <div class="card"><h4>All Law Books</h4><p>Wide range of academic and professional law books.</p></div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="section-title"><h3>Photo Gallery</h3></div>
+    <div class="gallery">
+      <div>Legal Research</div>
+      <div>Judiciary Prep</div>
+      <div>AI & Law</div>
+      <div>Law Library</div>
+      <div>Professional Drafting</div>
+      <div>Modern Workspace</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-title"><h3>Contact Us</h3></div>
+    <div class="contact">
+      <p><strong>Address:</strong> Sector 48, Sonipat, Harval, India</p>
+      <p><strong>Phone:</strong> 7718790132</p>
+      <p><strong>Email:</strong> info@techok.in</p>
+      <p><strong>Working Hours:</strong> Monday – Saturday | 10:00 AM – 7:00 PM</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Tech OK | Designed as a Future-Ready Legal Resource Platform
+  </footer>
+</body>
+</html>
